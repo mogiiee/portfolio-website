@@ -37,7 +37,9 @@ def submission():
 @app.route('/work2.html')
 def work2():
     return render_template('work2.html')
-
+@app.route('/patience.html')
+def wait():
+    return render_template('patience.html')
 @app.route('/submit_form' ,methods=['POST','GET'])
 def submit_form():
     if request.method == 'POST':
